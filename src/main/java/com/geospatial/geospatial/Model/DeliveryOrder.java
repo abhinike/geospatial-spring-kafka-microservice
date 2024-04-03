@@ -1,6 +1,5 @@
 package com.geospatial.geospatial.Model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 

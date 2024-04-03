@@ -1,0 +1,8 @@
+# Application Properties Example
+
+# Application Name
+spring.application.name=geospatial
+
+# Kafka Configuration
+spring.kafka.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=my-group-id

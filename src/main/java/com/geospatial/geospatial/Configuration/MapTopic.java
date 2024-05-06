@@ -7,8 +7,9 @@ import org.springframework.kafka.config.TopicBuilder;
 @Configuration
 public class MapTopic {
 
+
     public NewTopic LatLngTopic(){
-        return TopicBuilder.name("map-log-topic").build();
+        return TopicBuilder.name("map-log-topic").partitions(10).build();
     }
 
     public NewTopic OrdersTopic(){

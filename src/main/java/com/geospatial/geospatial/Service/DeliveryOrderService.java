@@ -2,6 +2,7 @@ package com.geospatial.geospatial.Service;
 
 
 import com.geospatial.geospatial.Model.DeliveryOrder;
+import com.geospatial.geospatial.Model.LatLng;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,10 +14,16 @@ public interface DeliveryOrderService {
 
     Optional<DeliveryOrder> addDeliveryOrderToCluster(DeliveryOrder order);
 
-    Optional<DeliveryOrder> getDeliveryOrderById(String uuid);
-
-
     Optional<List<DeliveryOrder>> generateRandomPath(String uuid);
+
+
+    List<DeliveryOrder> allDeliveryOrders();
+
+    DeliveryOrder getOrderById(String id );
+
+    DeliveryOrder createOrder(LatLng to, LatLng from);
+
+
 
 
 
